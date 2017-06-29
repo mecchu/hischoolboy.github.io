@@ -292,6 +292,129 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/29/GIT常用操作记录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/0.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hischoolboy">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/29/GIT常用操作记录/" itemprop="url">GIT常用操作记录</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-29T23:11:59+08:00">
+                2017-06-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          批量更新目录下所有仓库1234567#!/bin/shfor dir in $(ls -d */)do  if [ -d "$dir"/.git ]; then    echo "$dir" &amp;&amp; cd "$dir" &amp;&amp; git pull &amp;&amp; cd ..  fidone
+查看、添加、提交、删除、找回，重置修改文件1234567891011121314151617181920212223242526272829git help &lt;command&gt; # 显示command的helpgit show # 显示某次提交的内容 git show $idgit co -- &lt;file&gt; # 抛弃工作区修改git co . # 抛弃工作区修改git add &lt;file&gt; # 将工作文件修改提交到本地暂存区git add . # 将所有修改过的工作文件提交暂存区git rm &lt;file&gt; # 从版本库中删除文件git rm &lt;file&gt; --cached # 从版本库中删除文件，但不删除文件git reset &lt;file&gt; # 从暂存区恢复到工作文件git reset -- . # 从暂存区恢复到工作文件git reset --hard # 恢复最近一次提交过的状态，即放弃上次提交后的所有本次修改git ci &lt;file&gt; git ci . git ci -a # 将git add, git rm和git ci等操作都合并在一起做　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　git ci -am "some comments"git ci --amend # 修改最后一次提交记录git revert &lt;$id&gt; # 恢复某次提交的状态，恢复动作本身也创建次提交对象git revert HEAD # 恢复最后一次提交的状态
+查看文件diff1234567891011git diff &lt;file&gt; # 比较当前文件和暂存区文件差异 git diffgit diff &lt;id1&gt;&lt;id1&gt;&lt;id2&gt; # 比较两次提交之间的差异git diff &lt;branch1&gt;..&lt;branch2&gt; # 在两个分支之间比较git diff --staged # 比较暂存区和版本库差异git diff --cached # 比较暂存区和版本库差异git diff --stat # 仅仅比较统计信息
+查看提交记录1234567git log git log &lt;file&gt; # 查看该文件每次提交记录git log -p &lt;file&gt; # 查看每次详细修改内容的diffgit log -p -2 # 查看最近两次详细修改内容的diffgit log --stat #查看提交统计信息
+Mac上可以使用tig代替diff和log，brew install tigGit本地分支管理查看、切换、创建和删除分支1234567891011121314151617181920212223git br -r # 查看远程分支git br &lt;new_branch&gt; # 创建新的分支git br -v # 查看各个分支最后提交信息git br --merged # 查看已经被合并到当前分支的分支git br --no-merged # 查看尚未被合并到当前分支的分支git co &lt;branch&gt; # 切换到某个分支git co -b &lt;new_branch&gt; # 创建新的分支，并且切换过去git co -b &lt;new_branch&gt; &lt;branch&gt; # 基于branch创建新的new_branchgit co $id # 把某次历史提交记录checkout出来，但无分支信息，切换到其他分支会自动删除git co $id -b &lt;new_branch&gt; # 把某次历史提交记录checkout出来，创建成一个分支git br -d &lt;branch&gt; # 删除某个分支git br -D &lt;branch&gt; # 强制删除某个分支 (未被合并的分支被删除的时候需要强制)
+分支合并和rebase12345git merge &lt;branch&gt; # 将branch分支合并到当前分支git merge origin/master --no-ff # 不要Fast-Foward合并，这样可以生成merge提交git rebase master
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/29/GIT常用操作记录/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/26/Java基础笔记之多线程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -585,7 +708,7 @@ More info: Deployment
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
