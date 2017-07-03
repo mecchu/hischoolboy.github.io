@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title><![CDATA[java基础知识点滴]]></title>
+      <title><![CDATA[Java基础知识点滴]]></title>
       <url>/2017/07/03/java%E5%9F%BA%E7%A1%80%E8%AE%B0%E5%BD%95/</url>
       <content type="html"><![CDATA[<h3 id="StringBuilder-最佳实践-预估长度大小"><a href="#StringBuilder-最佳实践-预估长度大小" class="headerlink" title="StringBuilder 最佳实践 预估长度大小"></a><a href="http://calvin1978.blogcn.com/articles/stringbuilder.html" target="_blank" rel="external">StringBuilder</a> 最佳实践 预估长度大小</h3><blockquote>
 <p>StringBuilder的内部有一个char[]</p>
@@ -34,6 +34,8 @@
         
         <tags>
             
+            <tag> Java </tag>
+            
             <tag> 基础 </tag>
             
         </tags>
@@ -57,6 +59,12 @@
 <h3 id="也可以命令设置跟踪远程库和本地库"><a href="#也可以命令设置跟踪远程库和本地库" class="headerlink" title="也可以命令设置跟踪远程库和本地库"></a>也可以命令设置跟踪远程库和本地库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git branch --set-upstream master origin/master</div><div class="line"></div><div class="line">git branch --set-upstream develop origin/develop</div></pre></td></tr></table></figure>]]></content>
       
         
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -76,6 +84,16 @@
 </ul>
 ]]></content>
       
+        
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 基础 </tag>
+            
+            <tag> 多线程 </tag>
+            
+        </tags>
         
     </entry>
     
