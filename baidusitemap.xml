@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/07/03/java%E5%9F%BA%E7%A1%80%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2017-07-03T15:06:57.491Z</lastmod>
+    <data>
+        <display>
+        <title>java基础知识点滴</title>
+        <pubTime>2017-07-03T15:01:29.533Z</pubTime>
+        
+        <tag>基础</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/06/29/GIT%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2017-06-29T15:14:59.426Z</lastmod>
     <data>
@@ -35,19 +52,4 @@
     
     
     
-    
-  <url>
-    <loc>http://yoursite.com/2017/05/06/hello-world/</loc>
-    <lastmod>2017-05-06T01:56:25.413Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-05-06T01:56:25.412Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
 </urlset>
