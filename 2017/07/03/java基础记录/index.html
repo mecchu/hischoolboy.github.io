@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="StringBuilder 最佳实践 预估长度大小 StringBuilder的内部有一个char[] 默认长度是16 System.arraycopy成倍复制扩容  +         +XX:+OptimizeStringConcat(JDK7u40后默认打开)， 把相邻的(中间没隔着控制语句)   Map家族 考虑加载因子地设定初始大小 减小加载因子 String类型的key，不能用==判断">
+<meta name="description" content="StringBuilder 最佳实践 预估长度大小 StringBuilder的内部有一个char[] 默认长度是16 System.arraycopy成倍复制扩容  +         +XX:+OptimizeStringConcat(JDK7u40后默认打开)， 把相邻的(中间没隔着控制语句)">
 <meta name="keywords" content="Java,基础">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java基础知识点滴">
 <meta property="og:url" content="http://yoursite.com/2017/07/03/java基础记录/index.html">
 <meta property="og:site_name" content="hischoolboy">
-<meta property="og:description" content="StringBuilder 最佳实践 预估长度大小 StringBuilder的内部有一个char[] 默认长度是16 System.arraycopy成倍复制扩容  +         +XX:+OptimizeStringConcat(JDK7u40后默认打开)， 把相邻的(中间没隔着控制语句)   Map家族 考虑加载因子地设定初始大小 减小加载因子 String类型的key，不能用==判断">
-<meta property="og:updated_time" content="2017-07-03T15:11:44.519Z">
+<meta property="og:description" content="StringBuilder 最佳实践 预估长度大小 StringBuilder的内部有一个char[] 默认长度是16 System.arraycopy成倍复制扩容  +         +XX:+OptimizeStringConcat(JDK7u40后默认打开)， 把相邻的(中间没隔着控制语句)">
+<meta property="og:updated_time" content="2017-07-07T15:51:54.279Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础知识点滴">
-<meta name="twitter:description" content="StringBuilder 最佳实践 预估长度大小 StringBuilder的内部有一个char[] 默认长度是16 System.arraycopy成倍复制扩容  +         +XX:+OptimizeStringConcat(JDK7u40后默认打开)， 把相邻的(中间没隔着控制语句)   Map家族 考虑加载因子地设定初始大小 减小加载因子 String类型的key，不能用==判断">
+<meta name="twitter:description" content="StringBuilder 最佳实践 预估长度大小 StringBuilder的内部有一个char[] 默认长度是16 System.arraycopy成倍复制扩容  +         +XX:+OptimizeStringConcat(JDK7u40后默认打开)， 把相邻的(中间没隔着控制语句)">
 
 
 
@@ -372,6 +372,7 @@
 <p>System.arraycopy成倍复制扩容</p>
 <p><strong> + </strong>        +XX:+OptimizeStringConcat(JDK7u40后默认打开)，<br> 把相邻的(中间没隔着控制语句) </p>
 </blockquote>
+<a id="more"></a>
 <h3 id="Map家族"><a href="#Map家族" class="headerlink" title="Map家族"></a><a href="http://calvin1978.blogcn.com/articles/hashmap.html" target="_blank" rel="external">Map家族</a></h3><blockquote>
 <p>考虑加载因子地设定初始大小</p>
 <p>减小加载因子</p>
