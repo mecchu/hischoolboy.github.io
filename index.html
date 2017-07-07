@@ -292,6 +292,151 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/07/Linux常用命令记录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/0.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hischoolboy">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/07/Linux常用命令记录/" itemprop="url">Linux常用命令记录</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-07T23:43:46+08:00">
+                2017-07-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          一、内存监控监控内存的使用状态是非常重要的，通过监控有助于了解内存的使用状态，比如内存占用是否正常，内存是否紧缺等等，监控内存最常使用的命令有free、vmstat、top等
+1.1 free1234[root@admin-pc ~]# free              total        used        free      shared  buff/cache   availableMem:        5946700     3722220      149388        8188     2075092     1825812Swap:       8257532     1602628      6654904
+第一行（Mem）：
+
+total：内存总数 5946700 KB
+used：已使用的内存数 3722220 KB
+free：空闲的内存数 3722220 KB
+shared：多个进程共享的内存，总是149388
+buffers：缓存内存数 8188 KB
+cached：缓存内存数 2075092 KB
+available：可以使用的内存总量 1825812KB
+
+第二行（Swap）：表示交换分区的内存使用状态。
+另外，我们可以使用参数-m、-g来以MB、GB单位显示：
+1234[root@admin-pc ~]# free -m              total        used        free      shared  buff/cache   availableMem:           5807        3631         159           7        2017        1787Swap:          8063        1565        6498
+1.2 vmstatvmstat（Virtual Meomory Statistics，虚拟内存统计）是对系统的整体情况进行统计，包括内核进程、虚拟内存、磁盘、陷阱和 CPU 活动的统计信息。
+12345678910[root@admin-pc ~]# vmstat 2 100    # 2表示刷新间隔，100表示输出次数procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu----- r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st 0  0 1602544 147972      0 2078500    2    2    32   181    2    3 15  5 79  0  0 1  0 1602544 147972      0 2078500    0    0     0     0  607 1051  5  2 93  0  0 0  0 1602544 147724      0 2078516    0    0     0    10  710 1141  7  2 91  0  0 0  0 1602544 148096      0 2078516    0    0     0     0  618 1062  6  1 93  0  0 0  0 1602544 147848      0 2078516    0    0     0     0  666 1113  6  1 93  0  0 0  0 1602544 147600      0 2078516    0    0     0    90  626 1075  5  2 93  0  0 2  0 1602544 147600      0 2078536    0    0     0    68  620 1082  5  1 94  0  0
+1）procs
+
+r列表示运行和等待CPU时间片的进程数，这个值如果长期大于系统CPU个数，就说明CPU资源不足，可以考虑增加CPU；
+b列表示在等待资源的进程数，比如正在等待I/O或者内存交换等。
+
+2）memory
+
+swpd列表示切换到内存交换区的内存数量（以KB为单位）。如果swpd的值不为0或者比较大，而且si、so的值长期为0，那么这种情况一般不用担心，不会影响系统性能；
+free列表示当前空闲的物理内存数量（以KB为单位）；
+buff列表示buffers cache的内存数量，一般对块设备的读写才需要缓冲；
+cache列表示page cached的内存数量，一般作文件系统的cached，频繁访问
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/07/Linux常用命令记录/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/03/java基础记录/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -625,7 +770,8 @@ Mac上可以使用tig代替diff和log，brew install tigGit本地分支管理查
       
         
           
-          多线程1、进程和线程的概念当一个程序进入内存运行时，即变成一个进程（Process）。进程是系统进行资源分配和调度的一个独立单位。—— 进程三特征：
+          多线程1、进程和线程的概念当一个程序进入内存运行时，即变成一个进程（Process）。进程是系统进行资源分配和调度的一个独立单位。
+进程三特征：
 
 独立性：进程是系统中独立存在的实体，拥有自己独立的资源和地址空间；
 动态性：进程与程序的区别在于，程序只是一个静态的指令集合，而进程是一个正在系统中执行的指令集合，进程具有自己的生命周期和状态；
@@ -723,7 +869,7 @@ Mac上可以使用tig代替diff和log，brew install tigGit本地分支管理查
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -736,7 +882,7 @@ Mac上可以使用tig代替diff和log，brew install tigGit本地分支管理查
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

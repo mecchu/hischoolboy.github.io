@@ -1,11 +1,372 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search> 
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
   
     
-    <entry>
-      <title><![CDATA[Linux常用命令记录]]></title>
-      <url>/2017/07/07/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</url>
-      <content type="html"><![CDATA[<h1 id="一、内存监控"><a href="#一、内存监控" class="headerlink" title="一、内存监控"></a>一、内存监控</h1><p>监控内存的使用状态是非常重要的，通过监控有助于了解内存的使用状态，比如内存占用是否正常，内存是否紧缺等等，监控内存最常使用的命令有free、vmstat、top等</p>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="linux," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="一、内存监控监控内存的使用状态是非常重要的，通过监控有助于了解内存的使用状态，比如内存占用是否正常，内存是否紧缺等等，监控内存最常使用的命令有free、vmstat、top等 1.1 free1234[root@admin-pc ~]# free              total        used        free      shared  buff/cache   availab">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux常用命令记录">
+<meta property="og:url" content="http://yoursite.com/2017/07/07/Linux常用命令记录/index.html">
+<meta property="og:site_name" content="hischoolboy">
+<meta property="og:description" content="一、内存监控监控内存的使用状态是非常重要的，通过监控有助于了解内存的使用状态，比如内存占用是否正常，内存是否紧缺等等，监控内存最常使用的命令有free、vmstat、top等 1.1 free1234[root@admin-pc ~]# free              total        used        free      shared  buff/cache   availab">
+<meta property="og:updated_time" content="2017-07-07T09:01:30.544Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linux常用命令记录">
+<meta name="twitter:description" content="一、内存监控监控内存的使用状态是非常重要的，通过监控有助于了解内存的使用状态，比如内存占用是否正常，内存是否紧缺等等，监控内存最常使用的命令有free、vmstat、top等 1.1 free1234[root@admin-pc ~]# free              total        used        free      shared  buff/cache   availab">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/07/07/Linux常用命令记录/"/>
+
+
+
+
+
+  <title>Linux常用命令记录 | hischoolboy</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '85*****1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?87980c**************99ec5e26fb5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">hischoolboy</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">hischoolboy's Blog</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/07/Linux常用命令记录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/0.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hischoolboy">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Linux常用命令记录</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-07T23:43:46+08:00">
+                2017-07-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a class="cloud-tie-join-count" href="/2017/07/07/Linux常用命令记录/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count join-count" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="一、内存监控"><a href="#一、内存监控" class="headerlink" title="一、内存监控"></a>一、内存监控</h1><p>监控内存的使用状态是非常重要的，通过监控有助于了解内存的使用状态，比如内存占用是否正常，内存是否紧缺等等，监控内存最常使用的命令有free、vmstat、top等</p>
 <h2 id="1-1-free"><a href="#1-1-free" class="headerlink" title="1.1 free"></a>1.1 free</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root@admin-pc ~]<span class="comment"># free</span></div><div class="line">              total        used        free      shared  buff/cache   available</div><div class="line">Mem:        5946700     3722220      149388        8188     2075092     1825812</div><div class="line">Swap:       8257532     1602628      6654904</div></pre></td></tr></table></figure>
 <p>第一行（Mem）：</p>
 <ul>
@@ -131,113 +492,418 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ps aux | grep root       <span class="comment"># 输出root用户的所有进程</span></div><div class="line">ps -p &lt;pid&gt; -L            <span class="comment"># 显示进程&lt;pid&gt;的所有线程</span></div><div class="line">ps <span class="_">-e</span> -o pid,uname,pcpu,pmem,comm  <span class="comment"># 定制显示的列</span></div><div class="line">ps -o lstart &lt;pid&gt;        <span class="comment"># 显示进程的启动时间</span></div></pre></td></tr></table></figure>
 <p>ps命令的输出可以按任意某一列进行排序，通过使用内部排序键（列的别名），例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ps aux --sort=+rss         <span class="comment"># 按内存升序排列</span></div><div class="line">ps aux --sort=-rss        <span class="comment"># 按内存降序排列</span></div><div class="line">ps aux --sort=+%cpu        <span class="comment"># 按cpu升序排列</span></div><div class="line">ps aux --sort=-%cpu       <span class="comment"># 按cpu降序排列</span></div></pre></td></tr></table></figure></p>
 <p>ps命令的用法太多了，掌握一些常用的用法就好。如需了解更多的可选项，可以查看<a href="http://man.linuxde.net/" target="_blank" rel="external">man手册</a>。</p>
-]]></content>
+
+      
+    </div>
+
+    <div>
       
         
-        <tags>
-            
-            <tag> linux </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Java基础知识点滴]]></title>
-      <url>/2017/07/03/java%E5%9F%BA%E7%A1%80%E8%AE%B0%E5%BD%95/</url>
-      <content type="html"><![CDATA[<h3 id="StringBuilder-最佳实践-预估长度大小"><a href="#StringBuilder-最佳实践-预估长度大小" class="headerlink" title="StringBuilder 最佳实践 预估长度大小"></a><a href="http://calvin1978.blogcn.com/articles/stringbuilder.html" target="_blank" rel="external">StringBuilder</a> 最佳实践 预估长度大小</h3><blockquote>
-<p>StringBuilder的内部有一个char[]</p>
-<p>默认长度是16</p>
-<p>System.arraycopy成倍复制扩容</p>
-<p><strong> + </strong>        +XX:+OptimizeStringConcat(JDK7u40后默认打开)，<br> 把相邻的(中间没隔着控制语句) </p>
-</blockquote>
-<h3 id="Map家族"><a href="#Map家族" class="headerlink" title="Map家族"></a><a href="http://calvin1978.blogcn.com/articles/hashmap.html" target="_blank" rel="external">Map家族</a></h3><blockquote>
-<p>考虑加载因子地设定初始大小</p>
-<p>减小加载因子</p>
-<p>String类型的key，不能用==判断或者可能有哈希冲突时，尽量减少长度</p>
-<p>使用定制版的EnumMap</p>
-<p>使用IntObjectHashMap</p>
-</blockquote>
-<h4 id="HashMap-get-Object-key-步骤"><a href="#HashMap-get-Object-key-步骤" class="headerlink" title="HashMap.get(Object key) 步骤"></a>HashMap.get(Object key) 步骤</h4><ul>
-<li>获取key的HashCode并二次加工  </li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">return</span> h ^ (h &gt;&gt;&gt; <span class="number">16</span>); <span class="comment">//java8</span></div></pre></td></tr></table></figure>
-<ul>
-<li>落桶 </li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">index = hash &amp; (array.length-<span class="number">1</span>);</div></pre></td></tr></table></figure>
-<ul>
-<li>最后选择Entry</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (e.hash == hash &amp;&amp; ((k = e.key) == key || key.equals(k)))</div><div class="line">	<span class="keyword">return</span> e.value;</div></pre></td></tr></table></figure>]]></content>
+
+      
+    </div>
+
+    <div>
       
         
-        <tags>
-            
-            <tag> Java </tag>
-            
-            <tag> 基础 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[GIT常用操作记录]]></title>
-      <url>/2017/06/29/GIT%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/</url>
-      <content type="html"><![CDATA[<h2 id="批量更新目录下所有仓库"><a href="#批量更新目录下所有仓库" class="headerlink" title="批量更新目录下所有仓库"></a>批量更新目录下所有仓库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/sh</span></div><div class="line"><span class="keyword">for</span> dir <span class="keyword">in</span> $(ls <span class="_">-d</span> */)</div><div class="line"><span class="keyword">do</span></div><div class="line">  <span class="keyword">if</span> [ <span class="_">-d</span> <span class="string">"<span class="variable">$dir</span>"</span>/.git ]; <span class="keyword">then</span></div><div class="line">    <span class="built_in">echo</span> <span class="string">"<span class="variable">$dir</span>"</span> &amp;&amp; <span class="built_in">cd</span> <span class="string">"<span class="variable">$dir</span>"</span> &amp;&amp; git pull &amp;&amp; <span class="built_in">cd</span> ..</div><div class="line">  <span class="keyword">fi</span></div><div class="line"><span class="keyword">done</span></div></pre></td></tr></table></figure>
-<h2 id="查看、添加、提交、删除、找回，重置修改文件"><a href="#查看、添加、提交、删除、找回，重置修改文件" class="headerlink" title="查看、添加、提交、删除、找回，重置修改文件"></a>查看、添加、提交、删除、找回，重置修改文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">help</span> &lt;<span class="built_in">command</span>&gt; <span class="comment"># 显示command的help</span></div><div class="line"></div><div class="line">git show <span class="comment"># 显示某次提交的内容 git show $id</span></div><div class="line"></div><div class="line">git co -- &lt;file&gt; <span class="comment"># 抛弃工作区修改</span></div><div class="line"></div><div class="line">git co . <span class="comment"># 抛弃工作区修改</span></div><div class="line"></div><div class="line">git add &lt;file&gt; <span class="comment"># 将工作文件修改提交到本地暂存区</span></div><div class="line"></div><div class="line">git add . <span class="comment"># 将所有修改过的工作文件提交暂存区</span></div><div class="line"></div><div class="line">git rm &lt;file&gt; <span class="comment"># 从版本库中删除文件</span></div><div class="line"></div><div class="line">git rm &lt;file&gt; --cached <span class="comment"># 从版本库中删除文件，但不删除文件</span></div><div class="line"></div><div class="line">git reset &lt;file&gt; <span class="comment"># 从暂存区恢复到工作文件</span></div><div class="line"></div><div class="line">git reset -- . <span class="comment"># 从暂存区恢复到工作文件</span></div><div class="line"></div><div class="line">git reset --hard <span class="comment"># 恢复最近一次提交过的状态，即放弃上次提交后的所有本次修改</span></div><div class="line"></div><div class="line">git ci &lt;file&gt; git ci . git ci <span class="_">-a</span> <span class="comment"># 将git add, git rm和git ci等操作都合并在一起做　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　git ci -am "some comments"</span></div><div class="line"></div><div class="line">git ci --amend <span class="comment"># 修改最后一次提交记录</span></div><div class="line"></div><div class="line">git revert &lt;<span class="variable">$id</span>&gt; <span class="comment"># 恢复某次提交的状态，恢复动作本身也创建次提交对象</span></div><div class="line"></div><div class="line">git revert HEAD <span class="comment"># 恢复最后一次提交的状态</span></div></pre></td></tr></table></figure>
-<h3 id="查看文件diff"><a href="#查看文件diff" class="headerlink" title="查看文件diff"></a>查看文件diff</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">git diff &lt;file&gt; <span class="comment"># 比较当前文件和暂存区文件差异 git diff</span></div><div class="line"></div><div class="line">git diff &lt;id1&gt;&lt;id1&gt;&lt;id2&gt; <span class="comment"># 比较两次提交之间的差异</span></div><div class="line"></div><div class="line">git diff &lt;branch1&gt;..&lt;branch2&gt; <span class="comment"># 在两个分支之间比较</span></div><div class="line"></div><div class="line">git diff --staged <span class="comment"># 比较暂存区和版本库差异</span></div><div class="line"></div><div class="line">git diff --cached <span class="comment"># 比较暂存区和版本库差异</span></div><div class="line"></div><div class="line">git diff --stat <span class="comment"># 仅仅比较统计信息</span></div></pre></td></tr></table></figure>
-<h2 id="查看提交记录"><a href="#查看提交记录" class="headerlink" title="查看提交记录"></a>查看提交记录</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">log</span> git <span class="built_in">log</span> &lt;file&gt; <span class="comment"># 查看该文件每次提交记录</span></div><div class="line"></div><div class="line">git <span class="built_in">log</span> -p &lt;file&gt; <span class="comment"># 查看每次详细修改内容的diff</span></div><div class="line"></div><div class="line">git <span class="built_in">log</span> -p -2 <span class="comment"># 查看最近两次详细修改内容的diff</span></div><div class="line"></div><div class="line">git <span class="built_in">log</span> --stat <span class="comment">#查看提交统计信息</span></div></pre></td></tr></table></figure>
-<h3 id="Mac上可以使用tig代替diff和log，brew-install-tig"><a href="#Mac上可以使用tig代替diff和log，brew-install-tig" class="headerlink" title="Mac上可以使用tig代替diff和log，brew install tig"></a>Mac上可以使用tig代替diff和log，brew install tig</h3><h2 id="Git本地分支管理"><a href="#Git本地分支管理" class="headerlink" title="Git本地分支管理"></a>Git本地分支管理</h2><h3 id="查看、切换、创建和删除分支"><a href="#查看、切换、创建和删除分支" class="headerlink" title="查看、切换、创建和删除分支"></a>查看、切换、创建和删除分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">git br -r <span class="comment"># 查看远程分支</span></div><div class="line"></div><div class="line">git br &lt;new_branch&gt; <span class="comment"># 创建新的分支</span></div><div class="line"></div><div class="line">git br -v <span class="comment"># 查看各个分支最后提交信息</span></div><div class="line"></div><div class="line">git br --merged <span class="comment"># 查看已经被合并到当前分支的分支</span></div><div class="line"></div><div class="line">git br --no-merged <span class="comment"># 查看尚未被合并到当前分支的分支</span></div><div class="line"></div><div class="line">git co &lt;branch&gt; <span class="comment"># 切换到某个分支</span></div><div class="line"></div><div class="line">git co -b &lt;new_branch&gt; <span class="comment"># 创建新的分支，并且切换过去</span></div><div class="line"></div><div class="line">git co -b &lt;new_branch&gt; &lt;branch&gt; <span class="comment"># 基于branch创建新的new_branch</span></div><div class="line"></div><div class="line">git co <span class="variable">$id</span> <span class="comment"># 把某次历史提交记录checkout出来，但无分支信息，切换到其他分支会自动删除</span></div><div class="line"></div><div class="line">git co <span class="variable">$id</span> -b &lt;new_branch&gt; <span class="comment"># 把某次历史提交记录checkout出来，创建成一个分支</span></div><div class="line"></div><div class="line">git br <span class="_">-d</span> &lt;branch&gt; <span class="comment"># 删除某个分支</span></div><div class="line"></div><div class="line">git br -D &lt;branch&gt; <span class="comment"># 强制删除某个分支 (未被合并的分支被删除的时候需要强制)</span></div></pre></td></tr></table></figure>
-<h3 id="分支合并和rebase"><a href="#分支合并和rebase" class="headerlink" title="分支合并和rebase"></a>分支合并和rebase</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git merge &lt;branch&gt; <span class="comment"># 将branch分支合并到当前分支</span></div><div class="line"></div><div class="line">git merge origin/master --no-ff <span class="comment"># 不要Fast-Foward合并，这样可以生成merge提交</span></div><div class="line"></div><div class="line">git rebase master &lt;branch&gt; <span class="comment"># 将master rebase到branch，相当于： git co &lt;branch&gt; &amp;&amp; git rebase master &amp;&amp; git co master &amp;&amp; git merge &lt;branch&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="Git补丁管理-方便在多台机器上开发同步时用"><a href="#Git补丁管理-方便在多台机器上开发同步时用" class="headerlink" title="Git补丁管理(方便在多台机器上开发同步时用)"></a>Git补丁管理(方便在多台机器上开发同步时用)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git diff &gt; ../sync.patch <span class="comment"># 生成补丁</span></div><div class="line"></div><div class="line">git apply ../sync.patch <span class="comment"># 打补丁</span></div><div class="line"></div><div class="line">git apply --check ../sync.patch <span class="comment">#测试补丁能否成功</span></div></pre></td></tr></table></figure>
-<h3 id="Git暂存管理"><a href="#Git暂存管理" class="headerlink" title="Git暂存管理"></a>Git暂存管理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git stash <span class="comment"># 暂存</span></div><div class="line"></div><div class="line">git stash list <span class="comment"># 列所有stash</span></div><div class="line"></div><div class="line">git stash apply <span class="comment"># 恢复暂存的内容</span></div><div class="line"></div><div class="line">git stash drop <span class="comment"># 删除暂存区</span></div></pre></td></tr></table></figure>
-<h3 id="Git远程分支管理"><a href="#Git远程分支管理" class="headerlink" title="Git远程分支管理"></a>Git远程分支管理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">git pull <span class="comment"># 抓取远程仓库所有分支更新并合并到本地</span></div><div class="line"></div><div class="line">git pull --no-ff <span class="comment"># 抓取远程仓库所有分支更新并合并到本地，不要快进合并</span></div><div class="line"></div><div class="line">git fetch origin <span class="comment"># 抓取远程仓库更新</span></div><div class="line"></div><div class="line">git merge origin/master <span class="comment"># 将远程主分支合并到本地当前分支</span></div><div class="line"></div><div class="line">git co --track origin/branch <span class="comment"># 跟踪某个远程分支创建相应的本地分支</span></div><div class="line"></div><div class="line">git co -b &lt;local_branch&gt; origin/&lt;remote_branch&gt; <span class="comment"># 基于远程分支创建本地分支，功能同上</span></div><div class="line"></div><div class="line">git push <span class="comment"># push所有分支</span></div><div class="line"></div><div class="line">git push origin master <span class="comment"># 将本地主分支推到远程主分支</span></div><div class="line"></div><div class="line">git push -u origin master <span class="comment"># 将本地主分支推到远程(如无远程主分支则创建，用于初始化远程仓库)</span></div><div class="line"></div><div class="line">git push origin &lt;local_branch&gt; <span class="comment"># 创建远程分支， origin是远程仓库名</span></div><div class="line"></div><div class="line">git push origin &lt;local_branch&gt;:&lt;remote_branch&gt; <span class="comment"># 创建远程分支</span></div><div class="line"></div><div class="line">git push origin :&lt;remote_branch&gt; <span class="comment">#先删除本地分支(git br -d &lt;branch&gt;)，然后再push删除远程分支</span></div></pre></td></tr></table></figure>
-<h3 id="Git远程仓库管理"><a href="#Git远程仓库管理" class="headerlink" title="Git远程仓库管理"></a>Git远程仓库管理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git remote -v <span class="comment"># 查看远程服务器地址和仓库名称</span></div><div class="line"></div><div class="line">git remote show origin <span class="comment"># 查看远程服务器仓库状态</span></div><div class="line"></div><div class="line">git remote add origin git@ github:robbin/robbin_site.git <span class="comment"># 添加远程仓库地址</span></div><div class="line"></div><div class="line">git remote <span class="built_in">set</span>-url origin git@ github.com:robbin/robbin_site.git <span class="comment"># 设置远程仓库地址(用于修改远程仓库地址) git remote rm &lt;repository&gt; # 删除远程仓库</span></div></pre></td></tr></table></figure>
-<h3 id="创建远程仓库"><a href="#创建远程仓库" class="headerlink" title="创建远程仓库"></a>创建远程仓库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> --bare robbin_site robbin_site.git <span class="comment"># 用带版本的项目创建纯版本仓库</span></div><div class="line"></div><div class="line">scp -r my_project.git git@ git.csdn.net:~ <span class="comment"># 将纯仓库上传到服务器上</span></div><div class="line"></div><div class="line">mkdir robbin_site.git &amp;&amp; <span class="built_in">cd</span> robbin_site.git &amp;&amp; git --bare init <span class="comment"># 在服务器创建纯仓库</span></div><div class="line"></div><div class="line">git remote add origin git@ github.com:robbin/robbin_site.git <span class="comment"># 设置远程仓库地址</span></div><div class="line"></div><div class="line">git push -u origin master <span class="comment"># 客户端首次提交</span></div><div class="line"></div><div class="line">git push -u origin develop <span class="comment"># 首次将本地develop分支提交到远程develop分支，并且track</span></div><div class="line"></div><div class="line">git remote <span class="built_in">set</span>-head origin master <span class="comment"># 设置远程仓库的HEAD指向master分支</span></div></pre></td></tr></table></figure>
-<h3 id="也可以命令设置跟踪远程库和本地库"><a href="#也可以命令设置跟踪远程库和本地库" class="headerlink" title="也可以命令设置跟踪远程库和本地库"></a>也可以命令设置跟踪远程库和本地库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git branch --set-upstream master origin/master</div><div class="line"></div><div class="line">git branch --set-upstream develop origin/develop</div></pre></td></tr></table></figure>]]></content>
+
+      
+    </div>
+
+    <div>
       
         
-        <tags>
-            
-            <tag> 工具 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Java基础笔记之多线程]]></title>
-      <url>/2017/06/26/Java%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B/</url>
-      <content type="html"><![CDATA[<h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><h2 id="1、进程和线程的概念"><a href="#1、进程和线程的概念" class="headerlink" title="1、进程和线程的概念"></a>1、进程和线程的概念</h2><p>当一个程序进入内存运行时，即变成一个进程（Process）。进程是系统进行资源分配和调度的一个独立单位。</p>
-<p>进程三特征：</p>
-<ul>
-<li><strong>独立性</strong>：进程是系统中独立存在的实体，拥有自己独立的资源和地址空间；</li>
-<li><strong>动态性</strong>：进程与程序的区别在于，程序只是一个静态的指令集合，而进程是一个正在系统中执行的指令集合，进程具有自己的生命周期和状态；</li>
-<li><strong>并发性</strong>：多个进程可以在单个处理器上并发执行，互不影响。（与<strong>并行</strong>不是一个概念）</li>
-</ul>
-<p>线程（Thread）是进程的执行单元，独立、并发的执行流，被称为轻量级进程。</p>
-<ul>
-<li>线程可以拥有自己的堆栈、自己的程序计数器、自己的局部变量，但不拥有系统资源</li>
-<li>一个进程中可以有多个线程，它们共享该进程的全部资源</li>
-<li>多个线程并发地执行</li>
-</ul>
-]]></content>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+        </div>
+      
+
       
         
-        <tags>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-            <tag> Java </tag>
+              <a href="/2017/07/03/java基础记录/" rel="next" title="Java基础知识点滴">
+                <i class="fa fa-chevron-left"></i> Java基础知识点滴
+              </a>
             
-            <tag> 基础 </tag>
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            <tag> 多线程 </tag>
-            
-        </tags>
-        
-    </entry>
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/0.jpg"
+               alt="" />
+          <p class="site-author-name" itemprop="name"></p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/hischoolboy" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/hischoolboy" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/3209978175/profile?topnav=1&wvr=6" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/hischoolboy" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、内存监控"><span class="nav-number">1.</span> <span class="nav-text">一、内存监控</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-free"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 free</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-vmstat"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 vmstat</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、CPU监控"><span class="nav-number">2.</span> <span class="nav-text">二、CPU监控</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-top"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 top</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-mpstat"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 mpstat</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、网络监控"><span class="nav-number">3.</span> <span class="nav-text">三、网络监控</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-ethtool"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 ethtool</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-sar"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 sar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-netstat"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 netstat</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、磁盘监控"><span class="nav-number">4.</span> <span class="nav-text">四、磁盘监控</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-df"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 df</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-iostat"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 iostat</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、进程监控"><span class="nav-number">5.</span> <span class="nav-text">五、进程监控</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#top"><span class="nav-number">5.1.</span> <span class="nav-text">top</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ps"><span class="nav-number">5.2.</span> <span class="nav-text">ps</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"></span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
   
   
-</search>
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+    
+    <script>
+      var cloudTieConfig = {
+        url: document.location.href, 
+        sourceId: "",
+        productKey: "f5b7c4ca35a046b8bd7865c6dbd4861f",
+        target: "cloud-tie-wrapper"
+      };
+    </script>
+    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script type="text/javascript">
+    
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+      var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+      var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+      var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+      var bIsAndroid = sUserAgent.match(/android/i) == "android";
+      var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+      var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+      var htmljs = '<script type="text/javascript" color="0,0,255" opacity="0.7" zindex="-2" count="99" src="\/\/cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"><\/script>';
+      if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+      } else {
+        document.write(htmljs);
+     //   document.write('<script type="text/javascript" src="/js/ribbon.js" alpha="0.2" zindex="-2" ><\/script>');
+      }
+
+  </script>
+  <!-- <script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script> -->
+</body>
+</html>

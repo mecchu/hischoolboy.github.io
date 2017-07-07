@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/07/07/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</loc>
+    
+    <lastmod>2017-07-07T09:01:30.544Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/06/26/Java%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+    
+    <lastmod>2017-07-03T15:16:57.372Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/07/03/java%E5%9F%BA%E7%A1%80%E8%AE%B0%E5%BD%95/</loc>
     
     <lastmod>2017-07-03T15:11:44.519Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://yoursite.com/2017/06/29/GIT%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/</loc>
     
     <lastmod>2017-07-03T15:11:21.919Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/06/26/Java%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
-    
-    <lastmod>2017-07-03T15:10:56.704Z</lastmod>
     
   </url>
   

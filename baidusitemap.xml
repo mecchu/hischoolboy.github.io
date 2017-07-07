@@ -4,6 +4,44 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/07/07/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2017-07-07T09:01:30.544Z</lastmod>
+    <data>
+        <display>
+        <title>Linux常用命令记录</title>
+        <pubTime>2017-07-07T15:43:46.957Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/06/26/Java%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+    <lastmod>2017-07-03T15:16:57.372Z</lastmod>
+    <data>
+        <display>
+        <title>Java基础笔记之多线程</title>
+        <pubTime>2017-06-26T14:42:34.188Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>基础</tag>
+         
+        <tag>多线程</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/07/03/java%E5%9F%BA%E7%A1%80%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2017-07-03T15:11:44.519Z</lastmod>
     <data>
@@ -31,27 +69,6 @@
         <pubTime>2017-06-29T15:11:59.433Z</pubTime>
         
         <tag>工具</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/06/26/Java%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
-    <lastmod>2017-07-03T15:10:56.704Z</lastmod>
-    <data>
-        <display>
-        <title>Java基础笔记之多线程</title>
-        <pubTime>2017-06-26T14:42:34.188Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>基础</tag>
-         
-        <tag>多线程</tag>
          
          
            

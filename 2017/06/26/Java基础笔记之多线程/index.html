@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="多线程1、进程和线程的概念当一个程序进入内存运行时，即变成一个进程（Process）。进程是系统进行资源分配和调度的一个独立单位。—— 进程三特征：  独立性：进程是系统中独立存在的实体，拥有自己独立的资源和地址空间； 动态性：进程与程序的区别在于，程序只是一个静态的指令集合，而进程是一个正在系统中执行的指令集合，进程具有自己的生命周期和状态； 并发性：多个进程可以在单个处理器上并发执行，互不影响">
+<meta name="description" content="多线程1、进程和线程的概念当一个程序进入内存运行时，即变成一个进程（Process）。进程是系统进行资源分配和调度的一个独立单位。 进程三特征：  独立性：进程是系统中独立存在的实体，拥有自己独立的资源和地址空间； 动态性：进程与程序的区别在于，程序只是一个静态的指令集合，而进程是一个正在系统中执行的指令集合，进程具有自己的生命周期和状态； 并发性：多个进程可以在单个处理器上并发执行，互不影响。（">
 <meta name="keywords" content="Java,基础,多线程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java基础笔记之多线程">
 <meta property="og:url" content="http://yoursite.com/2017/06/26/Java基础笔记之多线程/index.html">
 <meta property="og:site_name" content="hischoolboy">
-<meta property="og:description" content="多线程1、进程和线程的概念当一个程序进入内存运行时，即变成一个进程（Process）。进程是系统进行资源分配和调度的一个独立单位。—— 进程三特征：  独立性：进程是系统中独立存在的实体，拥有自己独立的资源和地址空间； 动态性：进程与程序的区别在于，程序只是一个静态的指令集合，而进程是一个正在系统中执行的指令集合，进程具有自己的生命周期和状态； 并发性：多个进程可以在单个处理器上并发执行，互不影响">
-<meta property="og:updated_time" content="2017-07-03T15:10:56.704Z">
+<meta property="og:description" content="多线程1、进程和线程的概念当一个程序进入内存运行时，即变成一个进程（Process）。进程是系统进行资源分配和调度的一个独立单位。 进程三特征：  独立性：进程是系统中独立存在的实体，拥有自己独立的资源和地址空间； 动态性：进程与程序的区别在于，程序只是一个静态的指令集合，而进程是一个正在系统中执行的指令集合，进程具有自己的生命周期和状态； 并发性：多个进程可以在单个处理器上并发执行，互不影响。（">
+<meta property="og:updated_time" content="2017-07-03T15:16:57.372Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础笔记之多线程">
-<meta name="twitter:description" content="多线程1、进程和线程的概念当一个程序进入内存运行时，即变成一个进程（Process）。进程是系统进行资源分配和调度的一个独立单位。—— 进程三特征：  独立性：进程是系统中独立存在的实体，拥有自己独立的资源和地址空间； 动态性：进程与程序的区别在于，程序只是一个静态的指令集合，而进程是一个正在系统中执行的指令集合，进程具有自己的生命周期和状态； 并发性：多个进程可以在单个处理器上并发执行，互不影响">
+<meta name="twitter:description" content="多线程1、进程和线程的概念当一个程序进入内存运行时，即变成一个进程（Process）。进程是系统进行资源分配和调度的一个独立单位。 进程三特征：  独立性：进程是系统中独立存在的实体，拥有自己独立的资源和地址空间； 动态性：进程与程序的区别在于，程序只是一个静态的指令集合，而进程是一个正在系统中执行的指令集合，进程具有自己的生命周期和状态； 并发性：多个进程可以在单个处理器上并发执行，互不影响。（">
 
 
 
@@ -366,7 +366,8 @@
       
 
       
-        <h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><h2 id="1、进程和线程的概念"><a href="#1、进程和线程的概念" class="headerlink" title="1、进程和线程的概念"></a>1、进程和线程的概念</h2><p>当一个程序进入内存运行时，即变成一个进程（Process）。进程是系统进行资源分配和调度的一个独立单位。—— 进程三特征：<br><a id="more"></a></p>
+        <h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><h2 id="1、进程和线程的概念"><a href="#1、进程和线程的概念" class="headerlink" title="1、进程和线程的概念"></a>1、进程和线程的概念</h2><p>当一个程序进入内存运行时，即变成一个进程（Process）。进程是系统进行资源分配和调度的一个独立单位。</p>
+<p>进程三特征：</p>
 <ul>
 <li><strong>独立性</strong>：进程是系统中独立存在的实体，拥有自己独立的资源和地址空间；</li>
 <li><strong>动态性</strong>：进程与程序的区别在于，程序只是一个静态的指令集合，而进程是一个正在系统中执行的指令集合，进程具有自己的生命周期和状态；</li>
@@ -506,7 +507,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -519,7 +520,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
